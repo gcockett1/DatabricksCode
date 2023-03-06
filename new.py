@@ -324,13 +324,13 @@ print(number_to_guess)
 
 # DBTITLE 1,Number guess, got this online, not my code. https://thecleverprogrammer.com/2022/06/29/number-guessing-game-using-python/
 import random
-n = random.randrange(1,10)
-guess = int(input("Enter any number: "))
-while n!= guess:
+n = random.randrange(1,10) #number defining what is going to be guessed, used to compare the guess variable against in the while loop
+guess = int(input("Enter any number: ")) #guess variable that will be used during the loop 
+while n!= guess: #while n doesnt equal the guess, do these things until it does equal the guess. start of the while loop, dont need the return function
     if guess < n:
         print("Too low")
-        guess = int(input("Enter number again: "))
-    elif guess > n:
+        guess = int(input("Enter number again: ")) #in the same if statement so will work until a new input is done
+    elif guess > n: # elif statement for another situation, being larger or smaller
         print("Too high!")
         guess = int(input("Enter number again: "))
     else:
@@ -349,5 +349,9 @@ print("i dont know if this will " + noun)
 print("it is " + verb)
 print("i am " + adjective)
 print("i feel " + emotion)
+
+
+
+# COMMAND ----------
 
 
